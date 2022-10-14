@@ -1,0 +1,131 @@
+<!doctype html>
+
+<html>
+<head>
+<meta charset="utf-8">
+    
+<title>index.html</title>
+<link rel="stylesheet" href="stylesheet Forms.css">
+</head>
+
+<body>
+    <h1> Event Registration</h1>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Deelname Event</legend>
+
+<div>
+    <label for="event">Event:</label>
+    <select id="event" name="event">
+        <option>bedrijfsevent a</option>
+        <option>bedrijfsevent b</option>
+        <option>bedrijfsevent c</option>
+    </select>
+</div>
+
+<br>
+
+<div>
+    selecteer je gewenste datum om deel te nemen
+<br>
+<br>
+
+    <input type="radio" name="attendingDate"> <!-- aanduid Bolletje / Name zorgt voor maar 1 aanduiding-->
+    <label>13 MAART</label>
+<br>
+    <input type="radio" name="attendingDate"> <!-- aanduid Bolletje / Name zorgt voor maar 1 aanduiding-->
+    <label>14 MAART</label>
+<br>
+    <input type="radio" name="attendingDate"> <!-- aanduid Bolletje / Name zorgt voor maar 1 aanduiding-->
+    <label>15 MAART</label>
+</div>
+<br>
+<div>
+        <label for="quantity">Hoeveel mensen neem je mee?</label>
+    <br>
+        <input type="number" id="quantity" name="quantity" value="1" min="0">
+</div>
+
+        </fieldset>
+<br>
+        <fieldset>
+            <legend>Gegevens Deelnemer</legend>
+<div>
+        <label for="fname" >Voornaam:</label> <!-- tekst waar User moet op antwoorden -->
+</div>
+<div>
+        <input type= "text" id="fname" name = "fname" placeholder="Alex" required> <!-- hier kan user typen II Placeholder schrijft op plaats user types -->
+</div>   
+
+<br> <!-- Line break -->
+
+<div>
+        <label for="lname" >Achternaam:</label> 
+</div>
+<div>
+        <input type= "text" id="lname" name = "lname" placeholder="Janssens" required>  <!-- required beveeld om in te vullen -->
+</div>
+
+<br>
+
+<div>
+    <label for="phone">Telefoonnummer:</label>
+</div>
+<div>
+    <input type="tel" id="tel" name="tel" placeholder="(+32)474 12 34 56">
+</div>
+
+<br>
+
+<div>
+    <label for="bdate">Geboortedatum:</label>
+    <input type="date" id="email" name="bdate">
+</div>
+
+<br>
+    </fieldset>
+<br>
+    <fieldset>
+        <legend>Registratie</legend>
+<div>
+    <label for="email">Jouw mailadres:</label>
+    <input type="email" id="email" name="email" placeholder="alex.janssens@gmail.com">
+</div>
+
+<br>
+
+<div>
+    <label for="pass">Gewenste Paswoord:</label>
+    <input type="password" id="pass" name="pass" maxlength ="12">
+    <!-- Passwoord invullen met bolletjes, MAX LENGTh -->
+</div>
+
+<br>
+
+<div>
+    <label for="subscribe">ik wil de nieuwsbrief ontvangen:</label>
+    <input type="checkbox" id="subscribe" name="subscribe">
+</div>
+</fieldset>
+
+<br>
+
+<fieldset>
+    <legend>Andere info?</legend>
+<div>
+    <label for="msg"></label>
+    <textarea name="msg" id="msg" placeholder="Ik wil nog graag het volgende toevoegen:"></textarea>
+</div>
+<br>
+<div>
+    <input type = "reset"> <!-- resets de input -->
+
+    <input type = "submit"> <!-- verstuurt de input -->
+</div>
+</fieldset>
+    </form>
+    
+</body>
+</html>
+ 
